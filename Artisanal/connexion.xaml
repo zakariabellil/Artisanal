@@ -1,0 +1,21 @@
+﻿<Window x:Class="Artisanal.connexion"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Artisanal"
+        mc:Ignorable="d"
+        Title="connexion" Height="300" Width="550">
+    <Grid>
+        <Image x:Name="imageLogo" HorizontalAlignment="Left" Height="210" Margin="18,10,0,0" VerticalAlignment="Top" Width="205" Source="logo-black.png"/>
+        <Label x:Name="nomUtilisateurLab" Content="Nom utilisateur :" HorizontalAlignment="Left" Margin="246,51,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="mdpLab" Content="Mot de passe :" HorizontalAlignment="Left" Margin="246,92,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.157,0.341"/>
+        <PasswordBox x:Name="mdpTxt" HorizontalAlignment="Left" Margin="356,92,0,0" VerticalAlignment="Top" Width="120" Height="23" RenderTransformOrigin="-0.922,3.015"/>
+        <TextBox x:Name="nomUtilisateurTxt" HorizontalAlignment="Left" Height="23" Margin="356,51,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <RadioButton x:Name="clientRdBtn" Content="Client" HorizontalAlignment="Left" Margin="357,144,0,0" VerticalAlignment="Top"/>
+        <RadioButton x:Name="producteurRadBtn" Content="Producteur" HorizontalAlignment="Left" Margin="357,178,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="typeUtilisateurLab" Content="Type d'utilisateur :" HorizontalAlignment="Left" Margin="246,134,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.157,0.341"/>
+        <Button x:Name="connectionBtn" Content="Connection" HorizontalAlignment="Left" Margin="351,225,0,0" VerticalAlignment="Top" Width="75" RenderTransformOrigin="1.467,0.55" Click="connectionBtn_Click"/>
+
+    </Grid>
+</Window>
